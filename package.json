@@ -5,11 +5,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Cortez",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "11.8.1",
