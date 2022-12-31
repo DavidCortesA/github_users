@@ -3,11 +3,14 @@
   "name": "github-users",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "url": "git+https://github.com/DavidCortesA/github_users.git"
+  },
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "webpack --config webpack.config.js",
+    "deploy": "gh-pages -d dist",
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development"
   },
