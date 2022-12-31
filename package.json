@@ -1,25 +1,32 @@
 {
-  "homepage":"https://davidcortesa.github.io/github_users",
+  "homepage": "https://davidcortesa.github.io/github_users/",
   "name": "github-users",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development"
   },
   "keywords": [],
-  "author": "David Cortez",
+  "author": {
+    "name": "David Cortez",
+    "email": "david.cortes.ayala@hotmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "11.8.1",
     "@emotion/styled": "11.8.1",
     "@mui/icons-material": "5.4.4",
     "@mui/material": "5.4.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "terser-webpack-plugin": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "7.17.5",

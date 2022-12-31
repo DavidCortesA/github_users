@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import { IconButton, Stack, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 const Searcher = (props) => {
 
+  // eslint-disable-next-line react/prop-types
   const { setInputUser } = props;
 
   const [valueInput, setValueInput] = useState('');

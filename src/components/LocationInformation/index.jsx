@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* eslint-disable react/prop-types */
 import { Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -27,7 +29,7 @@ const LocationInformation = (props) => {
       <Grid item xs={6}>
         <Stack direction='row' spacing={2}>
           <LanguageIcon />
-          {blog != null ? <a target='_blank' href={blog}><Typography>{blog}</Typography></a>:<Typography>No Available</Typography>}
+          {blog != null ? <a target='_blank' href={blog} rel="noreferrer"><Typography>{blog}</Typography></a>:<Typography>No Available</Typography>}
         </Stack>
       </Grid>
       <Grid item xs={6}>

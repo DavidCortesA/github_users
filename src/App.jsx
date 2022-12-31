@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { Container } from '@mui/material';
 import Searcher from './components/Searcher';
@@ -26,11 +27,9 @@ const App = () => {
     }
   }
 
-  console.log(userState);
-
   useEffect(()=>{
     gettinUser(inputUser)
-  }, [inputUser])
+  })
 
 
   return (

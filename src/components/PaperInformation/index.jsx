@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* eslint-disable react/prop-types */
 import { Paper, Stack, Typography } from '@mui/material';
 import React from 'react'
 
